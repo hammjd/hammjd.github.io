@@ -316,8 +316,11 @@ section + section {
 }
 
 .card p {
-  margin-bottom: 0;
   font-size: 0.95rem;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .card__icon {
@@ -431,7 +434,14 @@ section + section {
   text-align: center;
 }
 
+.contact p:not(.contact__email) {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact__email {
+  text-align: center;
   font-family: var(--mono);
   font-size: 1.2rem;
   font-weight: 700;
@@ -865,6 +875,10 @@ section + section {
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 4px;
+}
+
+.price-amount + p {
+  text-align: center;
 }
 
 .price-card .check-list {
