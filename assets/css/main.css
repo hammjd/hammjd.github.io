@@ -125,12 +125,29 @@ p {
 }
 
 .site-nav a:not(.btn) {
+  position: relative;
   color: var(--text-muted);
   transition: color 0.15s ease;
 }
 
 .site-nav a:not(.btn):hover {
   color: var(--text);
+}
+
+.site-nav a.active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -22px;
+  height: 2px;
+  background: var(--gradient);
+  border-radius: 2px;
 }
 
 /* ---------- Buttons ---------- */
