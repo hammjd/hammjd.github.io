@@ -8,6 +8,8 @@
   --border-strong: rgba(255, 255, 255, 0.22);
   --accent: #3b82f6;
   --accent-dim: rgba(59, 130, 246, 0.35);
+  --accent-warn: #e0a83a;
+  --accent-warn-dim: rgba(224, 168, 58, 0.35);
   /* Reserved for the logo mark only, not used decoratively elsewhere. */
   --accent-1: #a855f7;
   --accent-2: #3b82f6;
@@ -731,23 +733,24 @@ section + section {
 }
 
 .timeline__review {
-  padding: 4px 28px 4px 2px;
-  border-left: 2px dashed var(--border-strong);
-  margin-left: 2px;
+  background: var(--bg-card);
+  border: 1px solid var(--accent-warn-dim);
+  border-radius: var(--radius);
+  padding: 24px 28px;
 }
 
 .timeline__review strong {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--text);
 }
 
 .timeline__review .step-num {
-  color: var(--text-muted);
+  color: var(--accent-warn);
 }
 
 .timeline__review p {
-  font-size: 0.85rem;
-  margin: 8px 0 0;
+  margin: 6px 0 0;
+  font-size: 0.95rem;
 }
 
 /* ---------- Instructor ---------- */
