@@ -1,142 +1,170 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>HammNet | Incident Response & Digital Forensics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-96x96.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-    <meta name="theme-color" content="#0c0f16">
-    <meta property="og:title" content="HammNet | Incident Response & Digital Forensics">
-    <meta property="og:description" content="Senior-level incident response, ransomware resilience, and digital forensic advisory.">
-    <meta property="og:image" content="https://hammnet.me/assets/social-preview.png">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hammnet.me">
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background-color: #0c0f16;
-            color: #e6e6e6;
-            line-height: 1.6;
-        }
+---
+layout: default
+title: HammNet | Incident Response & Digital Forensics
+---
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-        }
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <span class="eyebrow">Incident Response &amp; Digital Forensics</span>
+      <h1>Clear answers when a breach puts everything on the line.</h1>
+      <p class="hero__lead">
+        HammNet provides senior-level incident response, digital forensic
+        examination, and ransomware resilience advisory for organizations
+        facing complex security events.
+      </p>
+      <div class="hero__cta">
+        <a href="mailto:{{ site.contact_email }}" class="btn">Get in touch</a>
+        <a href="#services" class="btn btn--ghost">See services</a>
+      </div>
 
-        img.logo {
-            width: 160px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #7aa2ff;
-            font-weight: 400;
-            margin-top: 40px;
-        }
-
-        p {
-            font-size: 1.05em;
-            color: #cfcfcf;
-        }
-
-        .services {
-            text-align: left;
-            margin-top: 30px;
-        }
-
-        .services ul {
-            padding-left: 20px;
-        }
-
-        .services li {
-            margin-bottom: 12px;
-        }
-
-        .contact {
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid #2a2f3a;
-        }
-
-        a {
-            color: #7aa2ff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 60px;
-            font-size: 0.85em;
-            color: #888;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        
-        <img src="assets/logo.png" alt="HammNet Logo" class="logo">
-
-        <h1>HammNet</h1>
-        <p>
-            Incident Response, Digital Forensics, and Ransomware Resilience Advisory
-        </p>
-
-        <h2>About</h2>
-        <p>
-            HammNet provides senior-level incident response and digital forensic consulting
-            for organizations facing complex security events. With over 25 years of investigative
-            experience spanning law enforcement and global cyber incident response, HammNet
-            supports executive teams, CISOs, and technical responders during high-impact events.
-        </p>
-
-        <h2>Services</h2>
-        <div class="services">
-            <ul>
-                <li><strong>Incident Response Leadership</strong> — On-site or remote coordination of breach and ransomware response efforts</li>
-                <li><strong>Ransomware Readiness Assessments</strong> — Technical resilience reviews focused on Active Directory recovery and containment</li>
-                <li><strong>Digital Forensic Examinations</strong> — Endpoint, server, and log-based investigations</li>
-                <li><strong>Compromise Assessments</strong> — Proactive identification of attacker persistence and lateral movement</li>
-                <li><strong>Tabletop Exercises</strong> — Executive and technical scenario-based ransomware simulations</li>
-                <li><strong>Expert Advisory</strong> — Strategic guidance for CISOs, boards, and legal counsel during major incidents</li>
-                <li><strong>M&A Security Due Diligence</strong> — Post-acquisition compromise and resilience assessments</li>
-            </ul>
+      <div class="stat-row">
+        <div class="stat">
+          <strong>25+</strong>
+          <span>Years of investigative experience</span>
         </div>
-
-        <div class="contact">
-            <h2>Contact</h2>
-            <p>
-                For consulting inquiries:<br>
-                <a href="mailto:jeff@evidenx.net">
-                jeff@evidenx.net
-                </a>
-            </p>
+        <div class="stat">
+          <strong>Law enforcement &amp; corporate IR</strong>
+          <span>Background across both worlds</span>
         </div>
-
-        <footer>
-            © <span id="year"></span> HammNet. All rights reserved.
-        </footer>
-
+        <div class="stat">
+          <strong>Mainz, Germany</strong>
+          <span>EU-based, engagements worldwide</span>
+        </div>
+      </div>
     </div>
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <div class="hero__art">
+      <img src="{{ '/assets/img/hero-mark.png' | relative_url }}" alt="HammNet mark">
+    </div>
+  </div>
+</section>
 
-</body>
-</html>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Senior-level support for the moments that matter most</h2>
+      <p>Engagements are led directly, not handed off to a junior team after the sales call.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="card">
+        <div class="card__icon">IR</div>
+        <h3>Incident Response Leadership</h3>
+        <p>On-site or remote coordination of breach and ransomware response efforts.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">RR</div>
+        <h3>Ransomware Readiness Assessments</h3>
+        <p>Technical resilience reviews focused on Active Directory recovery and containment.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">DF</div>
+        <h3>Digital Forensic Examinations</h3>
+        <p>Endpoint, server, and log-based investigations.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">CA</div>
+        <h3>Compromise Assessments</h3>
+        <p>Proactive identification of attacker persistence and lateral movement.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">TT</div>
+        <h3>Tabletop Exercises</h3>
+        <p>Executive and technical scenario-based ransomware simulations.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">EA</div>
+        <h3>Expert Advisory</h3>
+        <p>Strategic guidance for CISOs, boards, and legal counsel during major incidents.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">MA</div>
+        <h3>M&amp;A Security Due Diligence</h3>
+        <p>Post-acquisition compromise and resilience assessments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="evidenx" class="spotlight">
+  <div class="wrap">
+    <div class="spotlight__inner">
+      <div class="spotlight__logo">
+        <img src="{{ '/assets/img/evidenx-mark.png' | relative_url }}" alt="Evidenx logo">
+      </div>
+      <div>
+        <span class="badge">HammNet Venture</span>
+        <h2><span class="gradient-text">Evidenx</span></h2>
+        <p>
+          Knowledge construction, not telemetry. Evidenx tests an
+          explanation against the evidence, the alternatives, and what is
+          missing, then keeps the reasoning visible so the person
+          investigating reaches their own defensible conclusion.
+        </p>
+        <a href="{{ site.evidenx_url }}" class="btn btn--ghost" target="_blank" rel="noopener">Visit evidenx.net</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="training">
+  <div class="wrap">
+    <div class="kompass">
+      <div>
+        <span class="status-pill">In development</span>
+        <h2>Applied AI for Solo Businesses</h2>
+        <p>
+          A six-week, hands-on program for solo professionals who want to
+          build and test a real AI-assisted prototype for their own business.
+          No prior coding experience required, just a genuine operational
+          problem worth solving.
+        </p>
+        <a href="mailto:{{ site.contact_email }}?subject=Training%20interest" class="btn">Register your interest</a>
+      </div>
+      <div class="kompass__panel">
+        <h3>What the program covers</h3>
+        <ul>
+          <li>Defining a real problem and a bounded project scope</li>
+          <li>Turning domain knowledge into clear AI-ready requirements</li>
+          <li>Effective, critical use of AI coding assistants</li>
+          <li>Building and deploying a working prototype with version control</li>
+          <li>Testing, debugging, and evaluating operational risk</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about__inner">
+      <span class="eyebrow">About</span>
+      <h2>Led directly by Jeff Hamm</h2>
+      <p>
+        HammNet provides senior-level incident response and digital forensic
+        consulting for organizations facing complex security events. With
+        more than 25 years of investigative experience spanning law
+        enforcement and global cyber incident response, HammNet supports
+        executive teams, CISOs, and technical responders during high-impact
+        events.
+      </p>
+      <p>
+        HammNet UG (haftungsbeschr&auml;nkt) is based in Mainz, Germany, and
+        takes on engagements across Europe and beyond.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2>Get in touch</h2>
+    <p>For consulting inquiries, incident response engagements, or to talk about applied AI training or Evidenx.</p>
+    <p class="contact__email">
+      <a href="mailto:{{ site.contact_email }}" class="gradient-text">{{ site.contact_email }}</a>
+    </p>
+  </div>
+</section>

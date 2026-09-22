@@ -1,0 +1,31 @@
+title: HammNet
+tagline: Incident Response & Digital Forensics Advisory
+description: >-
+  HammNet provides senior-level incident response, digital forensic
+  examination, and ransomware resilience advisory for organizations
+  facing complex security events.
+url: "https://hammnet.org"
+author: Jeff Hamm
+
+contact_email: hammjd@yahoo.com
+evidenx_url: "https://evidenx.net"
+evidenx_email: jeff@evidenx.net
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,4 93,27 93,73 50,96 7,73 7,27"
+                   fill="none" stroke="url(#navGrad)" stroke-width="6"/>
+          <defs>
+            <linearGradient id="navGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="var(--accent-1)"/>
+              <stop offset="1" stop-color="var(--accent-2)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="brand__name">HammNet</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="{{ '/#services' | relative_url }}">Services</a>
+      <a href="{{ '/#evidenx' | relative_url }}">Evidenx</a>
+      <a href="{{ '/#training' | relative_url }}">Training</a>
+      <a href="{{ '/#about' | relative_url }}">About</a>
+      <a href="{{ '/#contact' | relative_url }}" class="btn btn--sm">Contact</a>
+    </nav>
+  </div>
+</header>

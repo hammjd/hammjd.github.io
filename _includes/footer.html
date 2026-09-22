@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>&copy; <span id="year"></span> HammNet UG (haftungsbeschr&auml;nkt). All rights reserved.</p>
+    <nav class="footer-nav" aria-label="Legal">
+      <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
