@@ -134,12 +134,12 @@ p {
   color: var(--text);
 }
 
-.site-nav a.active {
+.site-nav a:not(.btn).active {
   color: var(--text);
   font-weight: 600;
 }
 
-.site-nav a.active::after {
+.site-nav a:not(.btn).active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -148,6 +148,21 @@ p {
   height: 2px;
   background: var(--gradient);
   border-radius: 2px;
+}
+
+/* The Contact link is already styled as a solid button, so its active
+   state needs its own unambiguous treatment rather than the underline
+   used for plain nav links. */
+.site-nav a.btn.active {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+}
+
+.site-nav a:focus-visible,
+.brand:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 4px;
+  border-radius: 6px;
 }
 
 /* ---------- Buttons ---------- */
