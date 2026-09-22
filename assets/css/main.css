@@ -698,26 +698,20 @@ section + section {
 }
 
 .timeline__item {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 20px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px 28px;
 }
 
-.timeline__num {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--accent-dim);
-  color: var(--accent);
+.timeline__step {
+  display: block;
   font-family: var(--mono);
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
 .timeline__item h3 {
@@ -741,16 +735,13 @@ section + section {
 }
 
 .timeline__review {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 20px;
-  padding: 4px 28px 4px 0;
+  padding: 4px 28px 4px 2px;
+  border-left: 2px dashed var(--border-strong);
+  margin-left: 2px;
 }
 
-.timeline__review .timeline__num {
-  border: 1px dashed var(--border-strong);
+.timeline__review .timeline__step {
   color: var(--text-muted);
-  font-size: 0.75rem;
 }
 
 .timeline__review p {
@@ -928,17 +919,8 @@ section + section {
     padding: 64px 0;
   }
 
-  .timeline__item,
-  .timeline__review {
-    grid-template-columns: 36px 1fr;
-    gap: 14px;
+  .timeline__item {
     padding: 20px;
-  }
-
-  .timeline__num {
-    width: 28px;
-    height: 28px;
-    font-size: 0.8rem;
   }
 
   .cred-row {
