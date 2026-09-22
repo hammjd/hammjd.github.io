@@ -58,6 +58,8 @@ h2 {
 p {
   color: var(--text-muted);
   margin: 0 0 16px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .gradient-text {
@@ -289,11 +291,6 @@ section + section {
   text-align: center;
 }
 
-.section-head:not(.left) p {
-  text-align: justify;
-  hyphens: auto;
-}
-
 .section-head.left {
   margin: 0 0 48px;
   text-align: left;
@@ -432,11 +429,6 @@ section + section {
 
 .contact {
   text-align: center;
-}
-
-.contact p {
-  text-align: justify;
-  hyphens: auto;
 }
 
 .contact__email {
@@ -883,11 +875,6 @@ section + section {
   padding: 48px;
 }
 
-.price-card p {
-  text-align: justify;
-  hyphens: auto;
-}
-
 .price-amount {
   font-size: 3rem;
   font-weight: 800;
@@ -925,11 +912,6 @@ section + section {
   .spotlight__inner {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-
-  .spotlight__inner p {
-    text-align: justify;
-    hyphens: auto;
   }
 
   .spotlight__logo {
