@@ -376,6 +376,25 @@ section + section {
   margin-bottom: 14px;
 }
 
+/* ---------- Black Hat MasterClass ---------- */
+
+.blackhat {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.blackhat__banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blackhat__body {
+  padding: 32px 40px;
+}
+
 /* ---------- Training / course teaser ---------- */
 
 .kompass {
